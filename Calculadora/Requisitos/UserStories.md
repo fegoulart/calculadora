@@ -31,7 +31,7 @@
  - [ ] Tecla C (clear)
 
 
-## User Story - Erro
+## User Story 3 - Erro
 
 **Como** caixa do mercadinho
 **Eu quero** saber de forma clara quando houver algum erro na operação 
@@ -40,7 +40,7 @@
 **Definition of Done:**
  - [ ] Aparecer a mensagem "Erro" (ex: divisão por zero ou resultado de operação ser um número menor que -1,00e160, maior que 9,9999e160 ou com mais zeros a esquerda que -9,99999e-90)
 
-## User Story x - Repetição da última operação
+## User Story 4 - Repetição da última operação
 
 **Como** caixa do mercadinho
 **Eu quero** poder repetir infinitamente a última operação com um único toque
@@ -49,7 +49,7 @@
 **Definition of Done:**
  - [ ] Tecla = deve ser considerada como operação "repetir a última operação"
 
-## User Story x - Número Negativos
+## User Story 5 - Número Negativos
 
 **Como** estudante universitário
 **Eu quero** fazer contas com números negativos
@@ -58,7 +58,7 @@
 **Definition of Done:**
  - [ ] Existir uma tecla +/- que transforma o número apresentado em negativo ou em positivo (no caso de já estar como negativo)
 
-## User Story x - Porcentagem
+## User Story 6 - Porcentagem
 
 **Como** caixa do mercadinho
 **Eu quero** fazer contas de porcentagem
@@ -67,7 +67,7 @@
 **Definition of Done:**
  - [ ] 
 
-## User Story x - Operações em sequência
+## User Story 7 - Operações em sequência
 
 **Como** caixa do mercadinho
 **Eu quero** poder fazer várias operações em sequência 
@@ -77,7 +77,7 @@
 
 - [ ] Assim que qualquer tecla de operação for selecionada, deve aparecer o resultado da operação anterior no display
 
-## User Story x - Localização / Idioma
+## User Story 8 - Localização / Idioma
 
 **Como** desenvolvedor da calculadora
 **Eu quero** publicar o app em todos os países 

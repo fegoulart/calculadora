@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ClearUIButton: UIButton!
+
+    let operation = MathOperation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func NumberUIButtonAction(_ sender: UIButton) {
+        //operation.addNumber(sender.titleLabel?.text)
+    }
+    
 }
 

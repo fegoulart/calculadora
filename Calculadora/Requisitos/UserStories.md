@@ -10,6 +10,7 @@
  - [ ] Valores entre -999.999.999 e +999.999.999 devem ter o limite máximo de 9 dígitos incluindo as casas decimais
  - [ ] Valores menores de -999.999.999 , maiores de +999.999.999 ou com parte inteira 0 (zero) e mais de 8 casas decimais não poderão ser inseridos pelo usuário. No entanto,  deverão ser apresentados em notação científica caso sejam resultado de operação.
  - [ ] Resultados em notação científica devem ter um limite de 8 dígitos
+ - [ ] Deve ser possível fazer operações múltiplas até que a tecla "=" seja pressionada. Ex: 12 + 132 + 12.32 + 5 - 40 
 
 ## User Story 2 - Multiplicação e divisão
 
@@ -18,7 +19,10 @@
 **Para** cobrar os clientes
 
 **Definition of Done:**
- - [ ] 
+ - [ ] Valores entre -999.999.999 e +999.999.999 devem ter o limite máximo de 9 dígitos incluindo as casas decimais
+ - [ ] Valores menores de -999.999.999 , maiores de +999.999.999 ou com parte inteira 0 (zero) e mais de 8 casas decimais não poderão ser inseridos pelo usuário. No entanto,  deverão ser apresentados em notação científica caso sejam resultado de operação.
+ - [ ] Resultados em notação científica devem ter um limite de 8 dígitos
+ - [ ] Deve ser possível fazer operações múltiplas até que a tecla "=" seja pressionada. Ex: 12 / 132 * 12.32 / 5 * 40 
 
 ## User Story - Limpeza de valores
 
@@ -27,8 +31,8 @@
 **Para** ganhar tempo
 
 **Definition of Done:**
- - [ ] Tecla AC (all clear) 
- - [ ] Tecla C (clear)
+ - [ ] Tecla AC (all clear) limpa toda a expressão
+ - [ ] Tecla C (clear) limpa apenas o último valor inserido
 
 
 ## User Story 3 - Erro
@@ -47,7 +51,7 @@
 **Para** ganhar tempo
 
 **Definition of Done:**
- - [ ] Tecla = deve ser considerada como operação "repetir a última operação"
+ - [ ] Tecla "=" deve ser considerada como "repetir a última operação"
 
 ## User Story 5 - Número Negativos
 
@@ -86,6 +90,18 @@
 **Definition of Done:**
 
 - [ ] Separação de milhar de acordo com localização do dispositivo (ex: ponto para pt-br e vírgula para en-us)
+- [ ] Separação de decimal de acordo com localização do dispositivo (ex: ponto para pt-br e vírgula para en-us)
+- [ ] Mensagem de erro localizada ("Erro" para pt-br, "Error" para en-us e es-ar)
+ 
+## User Story 9 - Coding Style
+
+**Como** tech lead
+**Eu quero** garantir que o código tenha o mesmo estilo independentemente do desenvolvedor
+**Para** garantir a legibilidade, manutenibilidade e escalabilidade do código
+
+**Definition of Done:**
+
+ - [ ] Separação de milhar de acordo com localização do dispositivo (ex: ponto para pt-br e vírgula para en-us)
  - [ ] Separação de decimal de acordo com localização do dispositivo (ex: ponto para pt-br e vírgula para en-us)
  - [ ] Mensagem de erro localizada ("Erro" para pt-br, "Error" para en-us e es-ar)
 ##

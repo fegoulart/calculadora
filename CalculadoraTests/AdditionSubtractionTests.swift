@@ -32,9 +32,9 @@ class AdditionSubtractionUseStoryTests: XCTestCase {
         XCTAssertEqual(mOperation.currentTerm, ["0"])
     }
 
-    func test_init_stateMustBeMathOperator() {
+    func test_init_stateMustBeAllClear() {
         let mOperation = makeSut()
-        XCTAssertEqual(mOperation.currentState, CalculatorState.mathOperator)
+        XCTAssertEqual(mOperation.currentState, CalculatorState.allClear)
     }
 
     // MARK: Digit input
@@ -121,6 +121,27 @@ class AdditionSubtractionUseStoryTests: XCTestCase {
         XCTAssertEqual(mOperation.currentNumber, "102302423")
     }
 
+    func test_input_displayShouldTruncateDecimalNumberOnLimit() {
+        let mOperation = makeSut()
+        // swiftlint:disable force_try
+        try! mOperation.digitInput("0")
+        try! mOperation.digitInput("0")
+        try! mOperation.digitInput("1")
+        try! mOperation.digitInput(",")
+        try! mOperation.digitInput("2")
+        try! mOperation.digitInput("3")
+        try! mOperation.digitInput("4")
+        try! mOperation.digitInput("5")
+        try! mOperation.digitInput("6")
+        try! mOperation.digitInput("7")
+        try! mOperation.digitInput("8")
+        try! mOperation.digitInput("9")
+        try! mOperation.digitInput("0")
+        // swiftlint:enable force_try
+        XCTAssertEqual(mOperation.display, "1,23456789")
+        XCTAssertEqual(mOperation.currentNumber, "1.23456789")
+    }
+
     func test_input_decimalZeroInteger() {
         let mOperation = makeSut()
         // swiftlint:disable force_try
@@ -149,6 +170,18 @@ class AdditionSubtractionUseStoryTests: XCTestCase {
         // swiftlint:enable force_try
         XCTAssertEqual(mOperation.display, "1,2")
         XCTAssertEqual(mOperation.currentNumber, "1.2")
+    }
+
+    func test_input_mustShowDecimal() {
+        let mOperation = makeSut()
+        // swiftlint:disable force_try
+        try! mOperation.digitInput("4")
+        try! mOperation.digitInput("5")
+        try! mOperation.digitInput("2")
+        try! mOperation.digitInput(",")
+        // swiftlint:enable force_try
+        XCTAssertEqual(mOperation.display, "452,")
+        XCTAssertEqual(mOperation.currentNumber, "452.")
     }
 
     func test_input_decimalRepetition() {

@@ -15,10 +15,19 @@ public enum MathOperator: Character {
 }
 
 public final class MathOperation {
-    public var firstNumber: String = "0"
-    public var mathOperator: MathOperator?
-    public var secondNumber: String = ""
+
+    private var inputs: [String] = []
     private let displayLimit: Int
+
+    public var firstNumber: String {
+        return inputs[0]
+    }
+    public var mathOperator: Character {
+        return Character(inputs[1])
+    }
+    public var secondNumber: String {
+        return inputs[2]
+    }
 
     public init(displayLimit: Int = 9) {
         self.displayLimit = displayLimit

@@ -13,7 +13,27 @@
 		4FDA88842710AA9E00F40B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA88822710AA9E00F40B9A /* Main.storyboard */; };
 		4FDA88862710AAA000F40B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA88852710AAA000F40B9A /* Assets.xcassets */; };
 		4FDA88892710AAA000F40B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA88872710AAA000F40B9A /* LaunchScreen.storyboard */; };
+		56BF4F542715DB99006BB412 /* CalculadoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F532715DB99006BB412 /* CalculadoraTests.swift */; };
+		56BF4F612715DBBE006BB412 /* CalculadoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F602715DBBE006BB412 /* CalculadoraUITests.swift */; };
+		56BF4F632715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F622715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56BF4F552715DB99006BB412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FDA88712710AA9E00F40B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDA88782710AA9E00F40B9A;
+			remoteInfo = Calculadora;
+		};
+		56BF4F642715DBBE006BB412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FDA88712710AA9E00F40B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDA88782710AA9E00F40B9A;
+			remoteInfo = Calculadora;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4FDA88792710AA9E00F40B9A /* Calculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +44,29 @@
 		4FDA88852710AAA000F40B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FDA88882710AAA000F40B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FDA888A2710AAA000F40B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56BF4F512715DB99006BB412 /* CalculadoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BF4F532715DB99006BB412 /* CalculadoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraTests.swift; sourceTree = "<group>"; };
+		56BF4F5E2715DBBE006BB412 /* CalculadoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BF4F602715DBBE006BB412 /* CalculadoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraUITests.swift; sourceTree = "<group>"; };
+		56BF4F622715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4FDA88762710AA9E00F40B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BF4F4E2715DB99006BB412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BF4F5B2715DBBE006BB412 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				4FDA887B2710AA9E00F40B9A /* Calculadora */,
+				56BF4F522715DB99006BB412 /* CalculadoraTests */,
+				56BF4F5F2715DBBE006BB412 /* CalculadoraUITests */,
 				4FDA887A2710AA9E00F40B9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				4FDA88792710AA9E00F40B9A /* Calculadora.app */,
+				56BF4F512715DB99006BB412 /* CalculadoraTests.xctest */,
+				56BF4F5E2715DBBE006BB412 /* CalculadoraUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +108,23 @@
 				4FDA888A2710AAA000F40B9A /* Info.plist */,
 			);
 			path = Calculadora;
+			sourceTree = "<group>";
+		};
+		56BF4F522715DB99006BB412 /* CalculadoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				56BF4F532715DB99006BB412 /* CalculadoraTests.swift */,
+			);
+			path = CalculadoraTests;
+			sourceTree = "<group>";
+		};
+		56BF4F5F2715DBBE006BB412 /* CalculadoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56BF4F602715DBBE006BB412 /* CalculadoraUITests.swift */,
+				56BF4F622715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift */,
+			);
+			path = CalculadoraUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +147,42 @@
 			productReference = 4FDA88792710AA9E00F40B9A /* Calculadora.app */;
 			productType = "com.apple.product-type.application";
 		};
+		56BF4F502715DB99006BB412 /* CalculadoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BF4F592715DB99006BB412 /* Build configuration list for PBXNativeTarget "CalculadoraTests" */;
+			buildPhases = (
+				56BF4F4D2715DB99006BB412 /* Sources */,
+				56BF4F4E2715DB99006BB412 /* Frameworks */,
+				56BF4F4F2715DB99006BB412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56BF4F562715DB99006BB412 /* PBXTargetDependency */,
+			);
+			name = CalculadoraTests;
+			productName = CalculadoraTests;
+			productReference = 56BF4F512715DB99006BB412 /* CalculadoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56BF4F5D2715DBBE006BB412 /* CalculadoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BF4F662715DBBE006BB412 /* Build configuration list for PBXNativeTarget "CalculadoraUITests" */;
+			buildPhases = (
+				56BF4F5A2715DBBE006BB412 /* Sources */,
+				56BF4F5B2715DBBE006BB412 /* Frameworks */,
+				56BF4F5C2715DBBE006BB412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56BF4F652715DBBE006BB412 /* PBXTargetDependency */,
+			);
+			name = CalculadoraUITests;
+			productName = CalculadoraUITests;
+			productReference = 56BF4F5E2715DBBE006BB412 /* CalculadoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +195,14 @@
 				TargetAttributes = {
 					4FDA88782710AA9E00F40B9A = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					56BF4F502715DB99006BB412 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 4FDA88782710AA9E00F40B9A;
+					};
+					56BF4F5D2715DBBE006BB412 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 4FDA88782710AA9E00F40B9A;
 					};
 				};
 			};
@@ -116,6 +220,8 @@
 			projectRoot = "";
 			targets = (
 				4FDA88782710AA9E00F40B9A /* Calculadora */,
+				56BF4F502715DB99006BB412 /* CalculadoraTests */,
+				56BF4F5D2715DBBE006BB412 /* CalculadoraUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +234,20 @@
 				4FDA88892710AAA000F40B9A /* LaunchScreen.storyboard in Resources */,
 				4FDA88862710AAA000F40B9A /* Assets.xcassets in Resources */,
 				4FDA88842710AA9E00F40B9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BF4F4F2715DB99006BB412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BF4F5C2715DBBE006BB412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +264,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56BF4F4D2715DB99006BB412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BF4F542715DB99006BB412 /* CalculadoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BF4F5A2715DBBE006BB412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BF4F632715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift in Sources */,
+				56BF4F612715DBBE006BB412 /* CalculadoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56BF4F562715DB99006BB412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDA88782710AA9E00F40B9A /* Calculadora */;
+			targetProxy = 56BF4F552715DB99006BB412 /* PBXContainerItemProxy */;
+		};
+		56BF4F652715DBBE006BB412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDA88782710AA9E00F40B9A /* Calculadora */;
+			targetProxy = 56BF4F642715DBBE006BB412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4FDA88822710AA9E00F40B9A /* Main.storyboard */ = {
@@ -338,6 +488,96 @@
 			};
 			name = Release;
 		};
+		56BF4F572715DB99006BB412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64XJHK2QX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mariavaicomasdevs.CalculadoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculadora.app/Calculadora";
+			};
+			name = Debug;
+		};
+		56BF4F582715DB99006BB412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64XJHK2QX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mariavaicomasdevs.CalculadoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculadora.app/Calculadora";
+			};
+			name = Release;
+		};
+		56BF4F672715DBBE006BB412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64XJHK2QX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mariavaicomasdevs.CalculadoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calculadora;
+			};
+			name = Debug;
+		};
+		56BF4F682715DBBE006BB412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64XJHK2QX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mariavaicomasdevs.CalculadoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calculadora;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +595,24 @@
 			buildConfigurations = (
 				4FDA888E2710AAA000F40B9A /* Debug */,
 				4FDA888F2710AAA000F40B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56BF4F592715DB99006BB412 /* Build configuration list for PBXNativeTarget "CalculadoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BF4F572715DB99006BB412 /* Debug */,
+				56BF4F582715DB99006BB412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56BF4F662715DBBE006BB412 /* Build configuration list for PBXNativeTarget "CalculadoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BF4F672715DBBE006BB412 /* Debug */,
+				56BF4F682715DBBE006BB412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

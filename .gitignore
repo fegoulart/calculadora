@@ -1,14 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,xcode,swift,cocoapods,swiftpackagemanager
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,xcode,swift,cocoapods,swiftpackagemanager
-
-### CocoaPods ###
-## CocoaPods GitIgnore Template
-
-# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
-#           - Also handy if you have a large number of dependant pods
-#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
-Pods/
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,macos,swift
+# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,macos,swift
 
 ### macOS ###
 # General
@@ -123,12 +115,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-### SwiftPackageManager ###
-Packages
-xcuserdata
-*.xcodeproj
-
-
 ### Xcode ###
 # Xcode
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -146,4 +132,4 @@ xcuserdata
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,xcode,swift,cocoapods,swiftpackagemanager
+# End of https://www.toptal.com/developers/gitignore/api/xcode,macos,swift

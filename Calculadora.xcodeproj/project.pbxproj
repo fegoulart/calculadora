@@ -13,6 +13,10 @@
 		4FDA88842710AA9E00F40B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA88822710AA9E00F40B9A /* Main.storyboard */; };
 		4FDA88862710AAA000F40B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA88852710AAA000F40B9A /* Assets.xcassets */; };
 		4FDA88892710AAA000F40B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA88872710AAA000F40B9A /* LaunchScreen.storyboard */; };
+		561711862716398400680A0D /* CalculadoraClearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561711852716398400680A0D /* CalculadoraClearTests.swift */; };
+		56171189271639DE00680A0D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56171188271639DE00680A0D /* Helper.swift */; };
+		5617118B27163EBD00680A0D /* CalculadoraNegativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617118A27163EBD00680A0D /* CalculadoraNegativeTests.swift */; };
+		5617118D271641D400680A0D /* CalculadoraPercentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617118C271641D400680A0D /* CalculadoraPercentTests.swift */; };
 		56BF4F542715DB99006BB412 /* CalculadoraOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F532715DB99006BB412 /* CalculadoraOperationsTests.swift */; };
 		56BF4F612715DBBE006BB412 /* CalculadoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F602715DBBE006BB412 /* CalculadoraUITests.swift */; };
 		56BF4F632715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F622715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift */; };
@@ -47,6 +51,10 @@
 		4FDA88852710AAA000F40B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FDA88882710AAA000F40B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FDA888A2710AAA000F40B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		561711852716398400680A0D /* CalculadoraClearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraClearTests.swift; sourceTree = "<group>"; };
+		56171188271639DE00680A0D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5617118A27163EBD00680A0D /* CalculadoraNegativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraNegativeTests.swift; sourceTree = "<group>"; };
+		5617118C271641D400680A0D /* CalculadoraPercentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraPercentTests.swift; sourceTree = "<group>"; };
 		56BF4F512715DB99006BB412 /* CalculadoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BF4F532715DB99006BB412 /* CalculadoraOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraOperationsTests.swift; sourceTree = "<group>"; };
 		56BF4F5E2715DBBE006BB412 /* CalculadoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,10 +125,22 @@
 			path = Calculadora;
 			sourceTree = "<group>";
 		};
+		56171187271639C900680A0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				56171188271639DE00680A0D /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		56BF4F522715DB99006BB412 /* CalculadoraTests */ = {
 			isa = PBXGroup;
 			children = (
+				56171187271639C900680A0D /* Helper */,
 				56BF4F532715DB99006BB412 /* CalculadoraOperationsTests.swift */,
+				561711852716398400680A0D /* CalculadoraClearTests.swift */,
+				5617118A27163EBD00680A0D /* CalculadoraNegativeTests.swift */,
+				5617118C271641D400680A0D /* CalculadoraPercentTests.swift */,
 			);
 			path = CalculadoraTests;
 			sourceTree = "<group>";
@@ -334,7 +354,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56171189271639DE00680A0D /* Helper.swift in Sources */,
+				5617118D271641D400680A0D /* CalculadoraPercentTests.swift in Sources */,
 				56BF4F542715DB99006BB412 /* CalculadoraOperationsTests.swift in Sources */,
+				5617118B27163EBD00680A0D /* CalculadoraNegativeTests.swift in Sources */,
+				561711862716398400680A0D /* CalculadoraClearTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

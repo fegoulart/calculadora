@@ -38,6 +38,11 @@ public final class MathOperation {
         case invalidInput(Character)
         case calculationError(String)
     }
+    private enum Status {
+        case justCleared
+        case another
+    }
+    private var calculatorStatus = Status.another
 
     public init(displayLimit: Int = 9, expression: SimpleExpression = SimpleExpression()) {
         self.displayLimit = displayLimit
@@ -53,7 +58,7 @@ public final class MathOperation {
         if let display = expression.rightTerm {
             return display.toCalculatorDisplay
         }
-        if let display = expression.leftTerm {
+        if let display = expression.leftTerm, calculatorStatus != .justCleared {
             return display.toCalculatorDisplay
         }
         return "0"
@@ -65,6 +70,7 @@ public final class MathOperation {
 extension MathOperation {
 
     public func digitInput(_ input: Character) throws {
+        calculatorStatus = .another
         try validateDigitInput(input)
         let mInput = transformInput(input)
         appendToTerm(mInput)
@@ -110,6 +116,7 @@ extension MathOperation {
 extension MathOperation {
 
     public func operatorInput(_ input: Character) throws {
+        calculatorStatus = .another
         try validateOperatorInput(input)
         let mInput = transformOperatorInput(input)
         expression.mathOperator = MathOperator.init(rawValue: mInput)
@@ -139,6 +146,7 @@ extension MathOperation {
 extension MathOperation {
 
     public func equalsInput() {
+        calculatorStatus = .another
         guard expression.leftTerm != nil,
                 expression.mathOperator?.rawValue != nil,
                 expression.rightTerm != nil else { return }
@@ -165,5 +173,49 @@ extension MathOperation {
             result = doubleLeftTerm * doubleRightTerm
         }
         return result.isNaN ? NSLocalizedString("Erro", comment: "Error") : String(result)
+    }
+}
+
+// MARK: Clear Operations
+
+extension MathOperation {
+
+    public func clear() {
+        calculatorStatus = .justCleared
+        if expression.result != nil || expression.rightTerm != nil || expression.mathOperator != nil {
+            expression.result = nil
+            expression.rightTerm = nil
+        } else {
+            expression = SimpleExpression()
+        }
+    }
+
+    public func clearAll() {
+        calculatorStatus = .another
+        expression = SimpleExpression()
+    }
+}
+
+// MARK: Negative Button
+
+extension MathOperation {
+    public func negativeInput() {
+        calculatorStatus = .another
+        guard expression.result == nil, expression.leftTerm != nil else { return }
+        if let rightTerm = expression.rightTerm {
+            if expression.rightTerm?.first == "-" {
+                expression.rightTerm = String(rightTerm.dropFirst())
+            } else {
+                expression.rightTerm = "-\(rightTerm)"
+            }
+        } else {
+            if let leftTerm = expression.leftTerm, expression.mathOperator == nil {
+                if leftTerm.first == "-" {
+                    expression.leftTerm = String(leftTerm.dropFirst())
+                } else {
+                    expression.leftTerm = "-\(leftTerm)"
+                }
+            }
+        }
     }
 }

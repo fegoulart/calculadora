@@ -25,18 +25,6 @@ class CalculadoraOperationsTests: XCTestCase {
         let sut = makeSUT()
         XCTAssertEqual(sut.display, "0")
     }
-
-    // MARK: Helper methods
-
-    func makeSUT(
-        limit: Int = 9,
-        expression: SimpleExpression = SimpleExpression()
-    ) -> MathOperation {
-        return MathOperation(
-            displayLimit: limit,
-            expression: expression
-        )
-    }
 }
 
 // MARK: Digit input

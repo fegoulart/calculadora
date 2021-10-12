@@ -31,4 +31,11 @@ extension String {
             "0123456789".contains($0)
         }
     }
+
+    var noEndingOperator: String {
+        if self.last == "+" || self.last == "-" || self.last == "/" || self.last == "*" {
+            return String(self.dropLast())
+        }
+        return self
+    }
 }

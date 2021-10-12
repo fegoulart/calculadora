@@ -87,6 +87,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="Feo-Rs-uAl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -164,6 +167,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="t0j-fD-ita"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -238,6 +244,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="khv-re-x9k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -315,6 +324,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="mE1-tf-8H3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

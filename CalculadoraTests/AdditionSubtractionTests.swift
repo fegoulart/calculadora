@@ -225,9 +225,36 @@ class AdditionSubtractionUseStoryTests: XCTestCase {
 
     // MARK: Operator input
 
+    func test_input_numbersOperators() {
+        let mOperation = makeSut()
+        // swiftlint:disable force_try
+        try! mOperation.digitInput("2")
+        try! mOperation.digitInput(",")
+        try! mOperation.digitInput("5")
+        try! mOperation.operatorInput("+")
+        try! mOperation.digitInput("3")
+        try! mOperation.digitInput(",")
+        try! mOperation.digitInput("7")
+        try! mOperation.digitInput("5")
+        try! mOperation.operatorInput("+")
+        XCTAssertEqual(mOperation.display, "6,25")
+        try! mOperation.operatorInput("X")
+        XCTAssertEqual(mOperation.display, "3,75")
+        // swiftlint:enable force_try
+    }
+
     // MARK: Helper Methods
 
     private func makeSut(displayLimit: Int = 9) -> MathOperation {
         return MathOperation(displayLimit: displayLimit)
     }
+
+//    private func makeSUT() -> ListViewController {
+//        let controller = ListViewController()
+//        controller.loadViewIfNeeded()
+//        controller.tableView.separatorStyle = .none
+//        controller.tableView.showsVerticalScrollIndicator = false
+//        controller.tableView.showsHorizontalScrollIndicator = false
+//        return controller
+//    }
 }

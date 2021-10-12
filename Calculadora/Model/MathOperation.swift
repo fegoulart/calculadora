@@ -200,7 +200,6 @@ extension MathOperation {
 
 extension MathOperation {
     public func negativeInput() {
-        calculatorStatus = .another
         guard expression.result == nil, expression.leftTerm != nil else { return }
         if let rightTerm = expression.rightTerm {
             if expression.rightTerm?.first == "-" {
@@ -215,6 +214,21 @@ extension MathOperation {
                 } else {
                     expression.leftTerm = "-\(leftTerm)"
                 }
+            }
+        }
+    }
+}
+
+// MARK: Percent Button
+
+extension MathOperation {
+    public func percentInput() {
+        guard expression.result == nil, expression.leftTerm != nil else { return }
+        if let rightTerm = expression.rightTerm, let doubleValue = Double(rightTerm) {
+            expression.rightTerm = String(doubleValue/100)
+        } else {
+            if let leftTerm = expression.leftTerm, expression.mathOperator == nil, let doubleValue = Double(leftTerm) {
+                expression.leftTerm = String(doubleValue/100)
             }
         }
     }

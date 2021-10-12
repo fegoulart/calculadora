@@ -21,8 +21,6 @@
 		56BF4F612715DBBE006BB412 /* CalculadoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F602715DBBE006BB412 /* CalculadoraUITests.swift */; };
 		56BF4F632715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F622715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift */; };
 		56BF4F6D2715EB2F006BB412 /* MathOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F6C2715EB2F006BB412 /* MathOperation.swift */; };
-		56BF4F7127160DA6006BB412 /* Character+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F7027160DA6006BB412 /* Character+Extension.swift */; };
-		56BF4F7327161727006BB412 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF4F7227161727006BB412 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +59,6 @@
 		56BF4F602715DBBE006BB412 /* CalculadoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraUITests.swift; sourceTree = "<group>"; };
 		56BF4F622715DBBE006BB412 /* CalculadoraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56BF4F6C2715EB2F006BB412 /* MathOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperation.swift; sourceTree = "<group>"; };
-		56BF4F7027160DA6006BB412 /* Character+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extension.swift"; sourceTree = "<group>"; };
-		56BF4F7227161727006BB412 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +109,6 @@
 		4FDA887B2710AA9E00F40B9A /* Calculadora */ = {
 			isa = PBXGroup;
 			children = (
-				56BF4F6F27160D89006BB412 /* Extensions */,
 				56BF4F6B2715EAB4006BB412 /* Model */,
 				56BF4F6A2715EAAD006BB412 /* View */,
 				56BF4F692715EAA2006BB412 /* Controller */,
@@ -179,15 +174,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		56BF4F6F27160D89006BB412 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				56BF4F7027160DA6006BB412 /* Character+Extension.swift */,
-				56BF4F7227161727006BB412 /* String+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,7 +184,6 @@
 				4FDA88752710AA9E00F40B9A /* Sources */,
 				4FDA88762710AA9E00F40B9A /* Frameworks */,
 				4FDA88772710AA9E00F40B9A /* Resources */,
-				56BF4F6E2715F30A006BB412 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -315,37 +300,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		56BF4F6E2715F30A006BB412 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4FDA88752710AA9E00F40B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4FDA88812710AA9E00F40B9A /* CalculatorViewController.swift in Sources */,
-				56BF4F7127160DA6006BB412 /* Character+Extension.swift in Sources */,
 				56BF4F6D2715EB2F006BB412 /* MathOperation.swift in Sources */,
 				4FDA887D2710AA9E00F40B9A /* AppDelegate.swift in Sources */,
-				56BF4F7327161727006BB412 /* String+Extension.swift in Sources */,
 				4FDA887F2710AA9E00F40B9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

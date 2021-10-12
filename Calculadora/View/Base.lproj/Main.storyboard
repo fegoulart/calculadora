@@ -85,7 +85,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="p5k-Ya-iv9"/>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="Wij-0g-2b1"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -164,6 +164,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="eE5-et-79C"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -238,6 +241,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="3SJ-8q-QKW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -315,6 +321,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorUIButtonAction:" destination="4t7-gI-ixq" eventType="touchUpInside" id="okv-Gt-Qyd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -380,6 +389,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="equalsUIButton:" destination="4t7-gI-ixq" eventType="touchUpInside" id="AiP-a4-9oT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -406,6 +418,9 @@
                             <constraint firstItem="c1x-6h-sG1" firstAttribute="top" secondItem="M3L-YK-jaP" secondAttribute="bottom" constant="40" id="yy9-Ij-6fv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayUILabel" destination="M3L-YK-jaP" id="dYP-45-iQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exc-bE-pU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

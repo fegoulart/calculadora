@@ -32,7 +32,7 @@ public final class MathOperation {
     public private(set) var expression: SimpleExpression
     private let displayLimit: Int
     public var display: String {
-        return "0"
+        return expression.leftTerm ?? "0"
     }
     public enum Error: Swift.Error {
         case invalidInput(Character)
@@ -43,6 +43,8 @@ public final class MathOperation {
         guard input.isNumber || input == "," else {
             throw MathOperation.Error.invalidInput(input)
         }
+        let leftTerm: String = expression.leftTerm ?? ""
+        expression.leftTerm = "\(leftTerm)\(input)"
     }
 
     public init(displayLimit: Int = 9, expression: SimpleExpression = SimpleExpression()) {

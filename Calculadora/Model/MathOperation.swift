@@ -1,10 +1,3 @@
-//
-//  Operation.swift
-//  Calculadora
-//
-//  Created by Fernando Goulart on 10/10/21.
-//
-
 import Foundation
 
 public enum MathOperator: Character {
@@ -42,12 +35,20 @@ public final class MathOperation {
         self.displayLimit = displayLimit
         self.expression = expression
     }
-    
     public func digitInput(_ input: Character) throws {
         guard input.isNumber || input=="," else {
             throw MathOperation.Error.invalidInput(input)
         }
         let leftTerm = expression.leftTerm ?? ""
+        guard leftTerm.onlyNumbers.count < displayLimit else {return}
         expression.leftTerm = "\(leftTerm)\(input)"
+    }
+}
+
+extension String {
+    var onlyNumbers : String {
+        self.filter{
+            "0123456789".contains($0)
+        }
     }
 }

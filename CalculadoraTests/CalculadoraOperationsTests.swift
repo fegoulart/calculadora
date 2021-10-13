@@ -39,7 +39,7 @@ extension CalculadoraOperationsTests {
 
     func test_input_validDigitShouldDisplay() {
         let sut = makeSUT()
-        swiftlint:disable force_try
+        // swiftlint:disable force_try
         try! sut.digitInput("5")
         XCTAssertEqual(sut.display, "5")
         try! sut.digitInput(",")
@@ -60,7 +60,7 @@ extension CalculadoraOperationsTests {
         XCTAssertEqual(sut.display, "5,1234567")
         try! sut.digitInput("8")
         XCTAssertEqual(sut.display, "5,12345678")
-        swiftlint:enable force_try
+        // swiftlint:enable force_try
     }
 
 //    func test_input_truncateMoreThanLimit() {

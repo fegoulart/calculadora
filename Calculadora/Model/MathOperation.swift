@@ -32,7 +32,7 @@ public final class MathOperation {
     public private(set) var expression: SimpleExpression
     private let displayLimit: Int
     public var display: String {
-        return expression.leftTerm ?? "0"
+        return expression.leftTerm?.toCalculatorDisplay ?? "0"
     }
     public enum Error: Swift.Error {
         case invalidInput(Character)
@@ -44,12 +44,22 @@ public final class MathOperation {
             throw MathOperation.Error.invalidInput(input)
         }
         let leftTerm: String = expression.leftTerm ?? ""
+        let mInput = transformInput(input)
+        guard isFirstDecimal(digit: mInput, term: leftTerm) ||  mInput != "." else { return }
         guard isSmallerThanLimit(leftTerm) else { return }
-        expression.leftTerm = "\(leftTerm)\(input)"
+        expression.leftTerm = "\(leftTerm)\(mInput)"
     }
 
     private func isSmallerThanLimit(_ term: String) -> Bool {
         return term.onlyNumbers.count < displayLimit
+    }
+
+    private func transformInput(_ digit: Character) -> Character {
+        return digit == "," ? "." : digit
+    }
+
+    private func isFirstDecimal(digit: Character, term: String) -> Bool {
+        return digit == "." && !term.hasDecimal
     }
 
     public init(displayLimit: Int = 9, expression: SimpleExpression = SimpleExpression()) {
@@ -64,5 +74,16 @@ extension String {
         self.filter {
             "0123456789".contains($0)
         }
+    }
+
+    var hasDecimal: Bool {
+        return self.contains(".")
+    }
+
+    var toCalculatorDisplay: String {
+        let result = self.map {
+            $0 == "." ? "," : $0
+        }
+        return String(result)
     }
 }

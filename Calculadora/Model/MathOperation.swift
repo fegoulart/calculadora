@@ -43,4 +43,9 @@ public final class MathOperation {
         self.displayLimit = displayLimit
         self.expression = expression
     }
+    public func digitInput(_ input: Character) throws {
+        guard input.isNumber || input=="," else {
+            throw MathOperation.Error.invalidInput(input)
+        }
+    }
 }

@@ -21,10 +21,10 @@ class CalculadoraOperationsTests: XCTestCase {
         XCTAssertEqual(sut.expression, allNilExpression)
     }
 
-//    func test_init_shouldDisplayZero() {
-//        let sut = makeSUT()
-//        XCTAssertEqual(sut.display, "0")
-//    }
+    func test_init_shouldDisplayZero() {
+        let sut = makeSUT() //sistem under test
+        XCTAssertEqual(sut.display, "0")
+    }
 
 }
 
@@ -32,37 +32,37 @@ class CalculadoraOperationsTests: XCTestCase {
 
 extension CalculadoraOperationsTests {
 
-//    func test_input_invalidDigitShouldThrow() {
-//        let sut = makeSUT()
-//        XCTAssertThrowsError(try sut.digitInput("A"))
-//    }
-//
-//    func test_input_validDigitShouldDisplay() {
-//        let sut = makeSUT()
-//        // swiftlint:disable force_try
-//        try! sut.digitInput("5")
-//        XCTAssertEqual(sut.display, "5")
-//        try! sut.digitInput(",")
-//        XCTAssertEqual(sut.display, "5,")
-//        try! sut.digitInput("1")
-//        XCTAssertEqual(sut.display, "5,1")
-//        try! sut.digitInput("2")
-//        XCTAssertEqual(sut.display, "5,12")
-//        try! sut.digitInput("3")
-//        XCTAssertEqual(sut.display, "5,123")
-//        try! sut.digitInput("4")
-//        XCTAssertEqual(sut.display, "5,1234")
-//        try! sut.digitInput("5")
-//        XCTAssertEqual(sut.display, "5,12345")
-//        try! sut.digitInput("6")
-//        XCTAssertEqual(sut.display, "5,123456")
-//        try! sut.digitInput("7")
-//        XCTAssertEqual(sut.display, "5,1234567")
-//        try! sut.digitInput("8")
-//        XCTAssertEqual(sut.display, "5,12345678")
-//        // swiftlint:enable force_try
-//    }
-//
+    func test_input_invalidDigitShouldThrow() {
+        let sut = makeSUT()
+        XCTAssertThrowsError(try sut.digitInput("A"))
+    }
+
+    func test_input_validDigitShouldDisplay() {
+        let sut = makeSUT()
+        swiftlint:disable force_try
+        try! sut.digitInput("5")
+        XCTAssertEqual(sut.display, "5")
+        try! sut.digitInput(",")
+        XCTAssertEqual(sut.display, "5,")
+        try! sut.digitInput("1")
+        XCTAssertEqual(sut.display, "5,1")
+        try! sut.digitInput("2")
+        XCTAssertEqual(sut.display, "5,12")
+        try! sut.digitInput("3")
+        XCTAssertEqual(sut.display, "5,123")
+        try! sut.digitInput("4")
+        XCTAssertEqual(sut.display, "5,1234")
+        try! sut.digitInput("5")
+        XCTAssertEqual(sut.display, "5,12345")
+        try! sut.digitInput("6")
+        XCTAssertEqual(sut.display, "5,123456")
+        try! sut.digitInput("7")
+        XCTAssertEqual(sut.display, "5,1234567")
+        try! sut.digitInput("8")
+        XCTAssertEqual(sut.display, "5,12345678")
+        swiftlint:enable force_try
+    }
+
 //    func test_input_truncateMoreThanLimit() {
 //        let sut = makeSUT(limit: 9)
 //        // swiftlint:disable force_try

@@ -10,8 +10,8 @@ import Calculadora
 
 class CalculadoraClearTests: XCTestCase {
 
-//    // MARK: Initialization tests
-//
+    // MARK: Initialization tests
+
 //    func test_init_clearShouldNotThrow() {
 //        let sut = makeSUT()
 //        XCTAssertNoThrow(sut.clear())

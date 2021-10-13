@@ -39,6 +39,12 @@ public final class MathOperation {
         case calculationError(String)
     }
 
+    public func digitInput(_ input: Character ) throws {
+        guard input.isNumber || input == "," else {
+            throw MathOperation.Error.invalidInput(input)
+        }
+    }
+
     public init(displayLimit: Int = 9, expression: SimpleExpression = SimpleExpression()) {
         self.displayLimit = displayLimit
         self.expression = expression

@@ -21,10 +21,10 @@ class CalculadoraOperationsTests: XCTestCase {
         XCTAssertEqual(sut.expression, allNilExpression)
     }
 
-//    func test_init_shouldDisplayZero() {
-//        let sut = makeSUT()
-//        XCTAssertEqual(sut.display, "0")
-//    }
+    func test_init_shouldDisplayZero() {
+        let sut = makeSUT()
+        XCTAssertEqual(sut.display, "0")
+    }
 
 }
 
@@ -32,10 +32,10 @@ class CalculadoraOperationsTests: XCTestCase {
 
 extension CalculadoraOperationsTests {
 
-//    func test_input_invalidDigitShouldThrow() {
-//        let sut = makeSUT()
-//        XCTAssertThrowsError(try sut.digitInput("A"))
-//    }
+    func test_input_invalidDigitShouldThrow() {
+        let sut = makeSUT()
+        XCTAssertThrowsError(try sut.digitInput("A"))
+    }
 //
 //    func test_input_validDigitShouldDisplay() {
 //        let sut = makeSUT()

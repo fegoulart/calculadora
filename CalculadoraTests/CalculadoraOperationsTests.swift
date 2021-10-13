@@ -63,24 +63,24 @@ extension CalculadoraOperationsTests {
         // swiftlint:enable force_try
     }
 
-//    func test_input_truncateMoreThanLimit() {
-//        let sut = makeSUT(limit: 9)
-//        // swiftlint:disable force_try
-//        try! sut.digitInput("0")
-//        try! sut.digitInput(",")
-//        try! sut.digitInput("1")
-//        try! sut.digitInput("2")
-//        try! sut.digitInput("3")
-//        try! sut.digitInput("4")
-//        try! sut.digitInput("5")
-//        try! sut.digitInput("6")
-//        try! sut.digitInput("7")
-//        try! sut.digitInput("8")
-//        try! sut.digitInput("9")
-//        // swiftlint:enable force_try
-//        XCTAssertEqual(sut.display, "0,12345678")
-//    }
-//
+    func test_input_truncateMoreThanLimit() {
+        let sut = makeSUT(limit: 9)
+        // swiftlint:disable force_try
+        try! sut.digitInput("0")
+        try! sut.digitInput(",")
+        try! sut.digitInput("1")
+        try! sut.digitInput("2")
+        try! sut.digitInput("3")
+        try! sut.digitInput("4")
+        try! sut.digitInput("5")
+        try! sut.digitInput("6")
+        try! sut.digitInput("7")
+        try! sut.digitInput("8")
+        try! sut.digitInput("9")
+        // swiftlint:enable force_try
+        XCTAssertEqual(sut.display, "0,12345678")
+    }
+
 //    func test_input_shouldNotAcceptMoreThanOneDecimal() {
 //        let sut = makeSUT()
 //        // swiftlint:disable force_try

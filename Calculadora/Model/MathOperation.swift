@@ -44,11 +44,25 @@ public final class MathOperation {
             throw MathOperation.Error.invalidInput(input)
         }
         let leftTerm: String = expression.leftTerm ?? ""
+        guard isSmallerThanLimit(leftTerm) else { return }
         expression.leftTerm = "\(leftTerm)\(input)"
+    }
+
+    private func isSmallerThanLimit(_ term: String) -> Bool {
+        return term.onlyNumbers.count < displayLimit
     }
 
     public init(displayLimit: Int = 9, expression: SimpleExpression = SimpleExpression()) {
         self.displayLimit = displayLimit
         self.expression = expression
+    }
+
+}
+
+extension String {
+    var onlyNumbers: String {
+        self.filter {
+            "0123456789".contains($0)
+        }
     }
 }
